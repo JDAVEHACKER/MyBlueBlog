@@ -1,0 +1,33 @@
+<header>
+  <nav class="be-black white large-padding">
+    <ul class="no-list row center-xs middles-xs">
+      <li class="col-md">
+        <h2 class="no-margin" id="logo">My Blue Blog</h2>
+      </li>
+      <li class="col-md">
+        <%= link_to "inicio", root_path %>
+      </li>
+      <li class="col-md">
+        Diseño
+      </li>
+      <li class="col-md">
+        Programación
+      </li>
+      <li class="col-md">
+        tecnología
+      </li>
+      <% if user_signed_in? %>
+        <li class="col-md">
+          <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+        </li>
+        <%else%>
+        <li class="col-md">
+          <%= link_to "Iniciar sesión", new_user_session_path %>
+        </li>
+        <li class="col-md">
+          <%= link_to "Crear cuenta", new_user_registration_path %>
+        </li>
+      <%end%>
+    </ul>
+  </nav>
+</header>

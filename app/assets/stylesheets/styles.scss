@@ -1,0 +1,55 @@
+$link-color: #000000;
+
+html,body{
+  margin: 0px;
+  font-family: 'Handlee', cursive;
+}
+.btn{
+  //background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#logo{
+  font-size: 1.2em;
+}
+.no-margin{
+  margin: 0px;
+}
+ul.no-list{
+  list-style: none;
+}
+.be-black{
+  background-color: #7BABFF;
+}
+.white{
+  color: $link-color;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:visited{
+  color: $link-color;
+}
+.large-padding{
+  padding: 10px 7px;
+}
+.field,.top-space,.actions{
+  margin-top:1em;
+}
+.text-center{
+  text-align: center;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline:none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
+}
